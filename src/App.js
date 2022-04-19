@@ -11,7 +11,7 @@ function Todo({ todo, index, completeTodo }) {
     >
       {todo.text}
       <div>
-      <button onClick = {() => completeTodo (index)}>Done </button>
+      <button className="btn" onClick = {() => completeTodo (index)}>Done </button>
       </div>
     </div>
   );
@@ -35,7 +35,7 @@ function TodoForm({ addTodo }) {
         type="text"
         className="input"
         value={value}
-        placeholder = {"Type to create and press 'Enter' to add"}
+        placeholder = {"Type to Create a list"}
         onChange={(e) => setValue(e.target.value)}
       />
     </form>
