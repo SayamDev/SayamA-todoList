@@ -45,7 +45,7 @@ function TodoForm({ addTodo }) {
 
 //todos = name of my state //setTodos what you are going to use to set the state
 
-//adding in an isCompleted: false value, you will set that to false to begin with and will, when prompted, change that to true.
+//adding in an isCompleted: false value, set that to false to begin with and will, when prompted, change that to true.
 function App() {
   const [todos, setTodos] = useState([
     {
