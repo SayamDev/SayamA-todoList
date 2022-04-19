@@ -36,13 +36,30 @@ function TodoForm({addTodo}) {
 //todos = name of my state //setTodos what you are going to use to set the state
 
 
-
+//adding in an isCompleted: false value, you will set that to false to begin with and will, when prompted, change that to true.
 function App() {
   const [todos, setTodos] = useState([ 
-    {text: "learn more about react"},
-    {text: "gucci is life ok"},
-    {text: "learn about okay life"},
+    {
+      text: "learn react hoola",
+      isCompleted: false
+    },
+    {
+      text: "hello lola whats up",
+      isCompleted: false
+    },
+    {
+      text: "gucci is life gucci",
+      isCompleted: false
+    }
+
   ])
+
+
+  //function will be able to grab the existing list of items, add on the new item, and display that new list.
+  const addTodo = text => {
+    const newTodos = [...todos, {text}]
+    setTodos(newTodos)
+  }
 
 
   return (
