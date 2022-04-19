@@ -34,6 +34,7 @@ function TodoForm({ addTodo }) {
         type="text"
         className="input"
         value={value}
+        placeholder = {"Type to create your list"}
         onChange={(e) => setValue(e.target.value)}
       />
     </form>
@@ -77,6 +78,8 @@ function App() {
   return (
     <div className="app">
       <div className="todo-list">
+      <TodoForm addTodo={addTodo} />
+
         {todos.map((todo, index) => (
           <Todo
             key={index}
@@ -85,7 +88,7 @@ function App() {
             completeTodo={completeTodo}
           />
         ))}
-        <TodoForm addTodo={addTodo} />
+        
       </div>
     </div>
   );
