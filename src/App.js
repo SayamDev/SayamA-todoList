@@ -35,7 +35,7 @@ function TodoForm({ addTodo }) {
         type="text"
         className="input"
         value={value}
-        placeholder = {"Type to Create a list"}
+        placeholder = {"Type to Create a list and press Enter"}
         onChange={(e) => setValue(e.target.value)}
       />
     </form>
@@ -48,7 +48,7 @@ function TodoForm({ addTodo }) {
 function App() {
   const [todos, setTodos] = useState([
     {
-      text: "",
+      text: "Test",
       isCompleted: false,
     },
   ]);
