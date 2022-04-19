@@ -3,7 +3,7 @@ import "./App.css";
 
 
 // using completeTodo in the Todo function,
-function Todo({ todo, index, completeTodo }) {
+function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
     <div
       className="todo"
@@ -12,6 +12,7 @@ function Todo({ todo, index, completeTodo }) {
       {todo.text}
       <div>
       <button className="btn" onClick = {() => completeTodo (index)}>Done </button>
+      <button className="removebtn" onClick = {() => removeTodo (index)}>X</button>
       </div>
     </div>
   );
@@ -68,6 +69,15 @@ function App() {
     setTodos(newTodos);
   };
 
+
+  //remove list item
+  //grabing that current list, then splicing the chosen index off of the array of items. Once that is removed,  return the new state by setting it with setTodos to be newTodos.
+  const removeTodo = index => {
+    const newTodos = [...todos]
+    newTodos.splice(index, 1)
+    setTodos(newTodos)
+  }
+
   return (
     <div className="app">
       <div className="todo-list">
@@ -79,6 +89,7 @@ function App() {
             index={index}
             todo={todo}
             completeTodo={completeTodo}
+            removeTodo={removeTodo}
           />
         ))}
         

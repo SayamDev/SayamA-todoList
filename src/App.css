@@ -42,3 +42,12 @@
   border-radius: 3px;
   font-weight: bold;
 }
+
+.removebtn{
+  margin-left: 10px;
+  background-color: wheat;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  font-weight: bold;
+  
+}
