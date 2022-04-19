@@ -54,6 +54,14 @@ function App() {
 
   ])
 
+  //marking items as complete
+  //using the spread operator to grab the current list of items. In this function, I will change the isCompleted status to true so that it knows it is complete. It will then update the state and set the state to the newTodos.
+
+  const completeTodo = index => {
+    const newTodos = [...todos]
+    newTodos[index].isCompleted = true
+    setTodos(newTodos)
+  }
 
   //function will be able to grab the existing list of items, add on the new item, and display that new list.
   const addTodo = text => {
