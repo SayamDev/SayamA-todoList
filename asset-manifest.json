@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/todo-list-sayam/static/css/main.9fe9dc9a.css",
-    "main.js": "/todo-list-sayam/static/js/main.dffdaa55.js",
-    "static/js/787.168492b0.chunk.js": "/todo-list-sayam/static/js/787.168492b0.chunk.js",
-    "index.html": "/todo-list-sayam/index.html",
-    "main.9fe9dc9a.css.map": "/todo-list-sayam/static/css/main.9fe9dc9a.css.map",
-    "main.dffdaa55.js.map": "/todo-list-sayam/static/js/main.dffdaa55.js.map",
-    "787.168492b0.chunk.js.map": "/todo-list-sayam/static/js/787.168492b0.chunk.js.map"
+    "main.css": "/SayamA-todoList/static/css/main.7d83d2f6.css",
+    "main.js": "/SayamA-todoList/static/js/main.84b14740.js",
+    "static/js/787.168492b0.chunk.js": "/SayamA-todoList/static/js/787.168492b0.chunk.js",
+    "index.html": "/SayamA-todoList/index.html",
+    "main.7d83d2f6.css.map": "/SayamA-todoList/static/css/main.7d83d2f6.css.map",
+    "main.84b14740.js.map": "/SayamA-todoList/static/js/main.84b14740.js.map",
+    "787.168492b0.chunk.js.map": "/SayamA-todoList/static/js/787.168492b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fe9dc9a.css",
-    "static/js/main.dffdaa55.js"
+    "static/css/main.7d83d2f6.css",
+    "static/js/main.84b14740.js"
   ]
 }
